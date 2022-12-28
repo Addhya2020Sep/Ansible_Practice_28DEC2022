@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webservers
   become: yes
   tasks: 
   - name: i want to install git
@@ -16,6 +16,6 @@
     apt:
       name: apache2
       state: present
-      
+
 
 
