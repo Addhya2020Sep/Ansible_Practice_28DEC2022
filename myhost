@@ -12,3 +12,4 @@
 myubuntupack=apache2
 myredhatpack=httpd
 mygit=git
+mytree=tree
