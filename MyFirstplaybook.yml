@@ -4,7 +4,7 @@
   tasks: 
   - name: i want to install git
     apt: 
-      name: git
+      name: "{{mygit}}"
       state: present
     when: ansible_os_family =="Debian"
 
@@ -26,10 +26,16 @@
       state: present
     when: ansible_os_family =="RedHat"
 
-  - name : i want to install webserver on redhat
+  - name : i want to start the webserver on redhat
     service:
       name: "{{myredhatpack}}"
       state: started
     when: ansible_os_family =="RedHat"  
+
+  - name: i want to instll git on redhat
+    yum:
+      name: "{{mygit}}"
+      state: present
+    when: ansible_os_family =="RedHat"
 
 

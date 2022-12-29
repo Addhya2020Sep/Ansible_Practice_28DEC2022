@@ -11,3 +11,4 @@
 [webservers:vars]
 myubuntupack=apache2
 myredhatpack=httpd
+mygit=git
