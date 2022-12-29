@@ -26,4 +26,10 @@
       state: present
     when: ansible_os_family =="RedHat"
 
+  - name : i want to install webserver on redhat
+    service:
+      name: "{{myredhatpack}}"
+      state: started
+    when: ansible_os_family =="RedHat"  
+
 
