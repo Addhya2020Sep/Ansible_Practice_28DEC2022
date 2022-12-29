@@ -6,21 +6,24 @@
     apt: 
       name: git
       state: present
+    when: ansible_os_family =="Debian"
 
   - name: i want to install tree
     apt:
       name: tree
       state: present
+    when: ansible_os_family =="Debian"
 
   - name: i want to install webserver on ubuntu
     apt:
       name: "{{myubuntupack}}"
       state: present
+    when: ansible_os_family =="Debian"  
 
   - name : i want to install webserver on redhat
     yum:
       name: "{{myredhatpack}}"
       state: present
-
+    when: ansible_os_family =="RedHat"
 
 
