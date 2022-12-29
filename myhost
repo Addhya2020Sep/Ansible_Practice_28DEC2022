@@ -10,4 +10,4 @@
 
 [webservers:vars]
 myubuntupack=apache2
-myredhatpact=httpd
+myredhatpack=httpd

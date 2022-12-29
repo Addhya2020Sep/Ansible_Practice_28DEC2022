@@ -19,7 +19,7 @@
 
   - name : i want to install webserver on redhat
     yum:
-      name: "{{myredhatpact}}"
+      name: "{{myredhatpack}}"
       state: present
 
 
