@@ -17,5 +17,10 @@
       name: "{{myubuntupack}}"
       state: present
 
+  - name : i want to install webserver on redhat
+    yum:
+      name: "{{myredhatpact}}"
+      state: present
+
 
 

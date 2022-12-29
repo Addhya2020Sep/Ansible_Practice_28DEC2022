@@ -1,6 +1,7 @@
 [webservers]
 172.31.6.68
 172.31.8.76
+172.31.7.63
 
 [appservers]
 123.43.87.12
@@ -9,3 +10,4 @@
 
 [webservers:vars]
 myubuntupack=apache2
+myredhatpact=httpd
