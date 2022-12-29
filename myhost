@@ -7,3 +7,5 @@
 
 
 
+[webservers:vars]
+myubuntupack=apache2
